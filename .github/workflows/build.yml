@@ -26,8 +26,8 @@ jobs:
       - name: Sistem bagimliliklari
         run: |
           sudo apt-get update
-          sudo apt-get install -y git zip unzip autoconf libtool pkg-config \
-            zlib1g-dev libncurses-dev cmake libffi-dev libssl-dev build-essential ccache
+          sudo apt-get install -y git zip unzip autoconf automake libtool libtool-bin libltdl-dev \
+            pkg-config zlib1g-dev libncurses-dev cmake libffi-dev libssl-dev build-essential ccache gettext
 
       - name: Buildozer kur
         run: |
