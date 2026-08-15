@@ -7,7 +7,7 @@ source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
 
 # HTTPS POST icin gerekli ag kutuphaneleri
-requirements = python3,kivy,requests,urllib3,idna,charset-normalizer,certifi,openssl
+requirements = python3,kivy,openssl,certifi
 
 orientation = portrait
 fullscreen = 0
