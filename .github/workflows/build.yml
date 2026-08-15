@@ -35,6 +35,8 @@ jobs:
           pip install buildozer cython
 
       - name: APK derle
+        env:
+          CHARSET_NORMALIZER_USE_MYPYC: "0"
         run: buildozer android debug
 
       - name: APK'yi yukle (artifact)
