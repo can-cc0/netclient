@@ -56,7 +56,7 @@ class ClientUI(BoxLayout):
             payload = json.dumps({
                 "messages": [{"role": "user", "content": msg}],
                 "temperature": 0.7,
-                "max_tokens": 256,
+                "max_tokens": 1536,
             }).encode("utf-8")
             req = urllib.request.Request(
                 API_URL, data=payload, method="POST",
