@@ -65,7 +65,7 @@ class ClientUI(BoxLayout):
                     "ngrok-skip-browser-warning": "true",
                 },
             )
-            with urllib.request.urlopen(req, timeout=240, context=_SSL) as resp:
+            with urllib.request.urlopen(req, timeout=600, context=_SSL) as resp:
                 data = json.loads(resp.read().decode("utf-8", "replace"))
             try:
                 text = data["choices"][0]["message"]["content"]
