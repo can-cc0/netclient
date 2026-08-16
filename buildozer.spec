@@ -8,6 +8,7 @@ version = 0.1
 
 # HTTPS POST icin gerekli ag kutuphaneleri
 requirements = python3,kivy,openssl,certifi
+p4a.branch = v2026.05.09
 
 orientation = portrait
 fullscreen = 0
